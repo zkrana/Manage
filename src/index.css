@@ -52,7 +52,7 @@ body{
     @apply px-4 text-lg font-semibold text-black hover:text-primary cursor-pointer;
 }
 .active{
-    @apply text-primary;
+    @apply text-primary border-b-2 border-b-primary pb-[5px];
 }
 /* Header Top Button */
 .Btn-red{

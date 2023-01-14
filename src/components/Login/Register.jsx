@@ -18,28 +18,28 @@ export default function Register() {
                 <div className="Login-body">
                     <form className='w-full flex flex-wrap'>
                         <div className="User-area">
-                                <div class="form-groups">
-                                    <label class="control-label" for="input-number">Phone Number</label>
-                                    <input type="number" id="input-number" pattern='[0-9]' name="number" class="form-control" placeholder="Please enter your phone number" />
+                            <div class="form-groups">
+                                <label class="control-label" for="input-number">Phone Number</label>
+                                <input type="number" id="input-number" pattern='[0-9]' name="number" class="form-control" placeholder="Please enter your phone number" />
+                            </div>
+                            <div class="form-groups">
+                                <label class="control-label" for="input-password">Password</label>
+                                <input type="password" pattern=".{8,}" title="Eight or more characters" id="input-password" name="password" class="form-control" placeholder="Please enter your password!" />
+                            </div>
+                            <div class="multiple-form-groups">
+                                <div class="form-group">
+                                    <label class="control-label" for="input-dob">Date of Birth</label>
+                                    <input class="form-control" name="dob" type="date" id="input-dob" />
                                 </div>
-                                <div class="form-groups">
-                                    <label class="control-label" for="input-password">Password</label>
-                                    <input type="password" pattern=".{8,}" title="Eight or more characters" id="input-password" name="password" class="form-control" placeholder="Please enter your password!" />
+                                <div class="form-group">
+                                    <label class="control-label" for="input-lastname">Gender</label>
+                                    <select id='gender'>
+                                        <option>Select</option>
+                                        <option value='Male'>Male</option>
+                                        <option value='Female'>Female</option>
+                                    </select>
                                 </div>
-                                <div class="multiple-form-groups">
-                                    <div class="form-group">
-                                        <label class="control-label" for="input-dob">Date of Birth</label>
-                                        <input class="form-control" name="dob" type="date" id="input-dob" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="input-lastname">Gender</label>
-                                        <select id='gender'>
-                                            <option>Select</option>
-                                            <option value='Male'>Male</option>
-                                            <option value='Female'>Female</option>
-                                        </select>
-                                    </div>
-                                </div>
+                            </div>
                         </div>
                         <div className="Loginvia-email">
                             <div class="form-groups">
@@ -47,8 +47,8 @@ export default function Register() {
                                 <input type="text" id="input-name" name="input-name" class="form-control" placeholder="Please enter your phone name" />
                             </div>
                             <div className='pb-3'>
-                                <label class="next-checkbox checked ">
-                                    <input type="checkbox" checked />
+                                <label class="next-checkbox ">
+                                    <input type="checkbox" />
                                     <span className='pl-2'>I'd like to receive exclusive offers and promotions via SMS</span>
                                 </label>
                             </div>

@@ -82,7 +82,10 @@ export default function Header() {
                     </NavLink>
                 </span>
                 <span className='ml-2'>
-                    <a href='basket.com'> <img className='mr-2' src={cart} width={20} height={20} alt='Cart' /> </a>
+                    <NavLink to='../../cartpage'>
+                    <img className='mr-2' src={cart} width={20} height={20} alt='Cart' />
+                    </NavLink>
+                   
                 </span>
               </div>
               <div className='flex w-20 h-20 justify-center items-center md:hidden'>

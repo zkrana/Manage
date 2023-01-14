@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroBg from '../../img/Responsive-web-develeopment.png'
+import { NavLink } from "react-router-dom";
 export default function ServiceIntro() {
   return (
     <div className="Container mt-7">
@@ -18,7 +19,10 @@ export default function ServiceIntro() {
                 Design your business websites up to the mark with our web development service. Our company provides international standard websites, e-Commerce sites, and other development tools to make your product and service a good impression. <br></br>
                 We have designed websites for more than 500 clients per year since our beginning. You can glance at our client's testimonials about our committed delivery. Our team leader conducts direct discussions and meetings to complete your website projects. We run our full operations at uttara, Dhaka. ​
             </p>
-            <button className='Btn-red mt-5'>Get a free quote</button>
+            
+           <NavLink to='../contact'>
+              <button className='Btn-red mt-5'>Get a free quote</button>
+           </NavLink>
         </div>
       </div>
     </div>

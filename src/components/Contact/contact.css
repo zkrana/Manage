@@ -1,5 +1,5 @@
 .Heading{
-    @apply mt-10 py-10 text-center;
+    @apply py-10 text-center;
 }
 .Contact-Head{
     @apply font-bold text-[55px];

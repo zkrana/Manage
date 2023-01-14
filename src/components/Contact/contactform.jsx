@@ -4,7 +4,7 @@ export default function contactform() {
 
   return (
     <div className="Contact-form">
-        <div className="Form-wrapper">
+        <div className="pl-5">
             <form>
               <div className="form-control">
                 <div className="form-group">
@@ -36,7 +36,7 @@ export default function contactform() {
               </div>
               <div className="form-control mt-2">
                   <label for='Message'>Message</label>
-                  <textarea name='message' placeholder='Type your message' rows='10' />
+                  <textarea name='message' className='h-[10em]' placeholder='Type your message' rows='10' />
               </div>
               <div className="text-right py-3">
                 <button className='Contact-submit'>Send Message</button>
