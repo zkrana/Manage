@@ -1,10 +1,10 @@
 .Shop-wrapper{
-    @apply w-full flex justify-between items-center flex-wrap gap-[10px] py-[20px];
+    @apply w-full flex justify-between items-start flex-wrap py-[20px];
 }
 .Left-sidebar{
     @apply w-full sm:w-[20%] border;
 }
-.Filter,.Categories,.Price-range,.Reviews{
+.Filter,.Categories,.Price-range,.Reviews,.Search-bar{
     @apply border-b p-[10px] text-[20px] text-gray-500;
 }
 .Categories-data{
@@ -30,8 +30,57 @@
 
 
 .Shop-body{
-    @apply w-full sm:w-[50%];
+    @apply w-full sm:w-[80%];
 }
-.Right-sidebar{
-    @apply w-full sm:w-[30%];
+
+
+/* Shop Product Components */
+.Shop-topBar{
+    @apply w-full p-5 pt-0;
 }
+.Filter-wrapper{
+    @apply flex justify-between items-center;
+}
+.Filter-wrapper .Cart-table thead, .Filter-wrapper .Cart-table thead tr{
+    @apply flex w-full justify-between;
+}
+
+.Filter-wrapper .Cart-table tr td{
+    @apply flex w-[150px] justify-between items-center border text-gray-500 p-[5px];
+}
+/* .Filter-wrapper .Cart-table{
+    @apply h-28;
+} */
+.all-filters{
+   background-color: unset;
+   border: unset;
+   font-weight: 400;
+}
+
+/* Product Section */
+
+.Shop-product-wrapper{
+    @apply flex justify-between items-start flex-wrap;
+}
+
+.Product-item{
+    @apply w-1/3 p-2 mb-3;
+}
+.Product-thumbnail{
+    @apply relative bg-[#f6f6f6] rounded-sm shadow-sm p-5;
+}
+.Product-img{
+    @apply w-[90%] block mx-auto object-contain;
+}
+.Wishlist{
+    @apply absolute top-[10px] right-[10px] w-[30px] h-[30px] bg-white rounded-full cursor-pointer;
+}
+.Product-header,.Product-reviews{
+    @apply flex justify-between items-center my-3;
+}
+.Product-shortDetails{
+    @apply text-[16px] text-[#6b7280] leading-[20px] mb-2;
+}
+/* .Product-reviews{
+    @apply justify-around;
+} */

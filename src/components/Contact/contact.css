@@ -11,7 +11,7 @@
     @apply w-full sm:w-[40%] bg-[#3E1F92] rounded p-5 relative overflow-hidden;
 }
 .Contact-form{
-    @apply w-full sm:w-[60%] p-5;
+    @apply w-full sm:w-[60%] pl-0 pr-5 py-5 sm:p-5;
 }
 .Info-wrapper h2{
     @apply text-white text-[25px];

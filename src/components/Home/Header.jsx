@@ -20,8 +20,8 @@ export default function Header() {
                     <div className="Language">
                       <img src={flag} width={20} height={20} alt='USA' />
                       <select id='language' className='Select'>
-                        <option value='USA ($)'>USA ($)</option>
-                        <option value='UK (£)'>US (£)</option>
+                        <option value='US'>English - US </option>
+                        <option value='Bangla'>Bangla - Bn </option>
                       </select>
                     </div>
                     <div className="Location">
@@ -42,7 +42,7 @@ export default function Header() {
         <div className="Header-wrapper">
           <header className="App-header">
             <div className='Logo-box w-1/2 h-12 flex justify-start items-center pl-3 md:pl-0 md:w-2/12'>
-              <NavLink to='/'>
+              <NavLink to='/' className='borderUnset'>
                   <img src={logo} alt='Logo' height={60} width={120} className='animate-pulse' />
               </NavLink>
             </div>
@@ -78,12 +78,12 @@ export default function Header() {
               <div className='Acc-wrap'>
                 <span>
                     <NavLink to='../../login'>
-                        <img src={login} width={20} height={20} alt='Login' className='mr-[4px]'/>
+                        <img src={login} width={20} height={20} alt='Login'/>
                     </NavLink>
                 </span>
                 <span className='ml-2'>
                     <NavLink to='../../cartpage'>
-                    <img className='mr-2' src={cart} width={20} height={20} alt='Cart' />
+                    <img src={cart} width={20} height={20} alt='Cart' />
                     </NavLink>
                    
                 </span>

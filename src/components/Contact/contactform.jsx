@@ -4,7 +4,7 @@ export default function contactform() {
 
   return (
     <div className="Contact-form">
-        <div className="pl-5">
+        <div className="md:pl-5">
             <form>
               <div className="form-control">
                 <div className="form-group">

@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import './shop.css'
 import categoryOthers from '../../img/icon/arrow-down.svg'
+import ShopProduct from './ShopProduct'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fa-star } from '@fortawesome/free-solid-svg-icons';
+// import { fa-star } from '@fortawesome/free-solid-svg-icons';
 
 export default function ShopComponent() {
     const [ price, setPrice ] = useState(20);
@@ -22,6 +23,14 @@ export default function ShopComponent() {
         <div className="Container">
             <div className="Shop-wrapper">
                 <div className="Left-sidebar">
+                    <div className='Search-bar'>
+                        <form>
+                            <span>
+                                <label for='search'>Product Search</label>
+                                <input className='mt-2' type='search' name='search' placeholder='Search Product' />
+                            </span>
+                        </form>
+                    </div>
                     <div className='Filter'>
                         <h2>Filter</h2>
                     </div>
@@ -50,7 +59,7 @@ export default function ShopComponent() {
                     <div className="Reviews">
                         <h3>Reviews</h3>
                         <div>
-                        <FontAwesomeIcon icon={fa-star} className=' pl-2 text-primary'></FontAwesomeIcon>
+                        {/* <FontAwesomeIcon icon={fa-star} className=' pl-2 text-primary'></FontAwesomeIcon> */}
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -59,8 +68,9 @@ export default function ShopComponent() {
                         </div>
                     </div>
                 </div>
-                <div className="Shop-body"></div>
-                <div className="Right-sidebar"></div>
+                <div className="Shop-body">
+                    <ShopProduct />
+                </div>
             </div>
         </div>
     </div>
