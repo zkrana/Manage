@@ -64,7 +64,7 @@
 }
 
 .Product-item{
-    @apply w-1/3 p-2 mb-3;
+    @apply w-1/3 p-2 mb-4;
 }
 .Product-thumbnail{
     @apply relative bg-[#f6f6f6] rounded-sm shadow-sm p-5;
@@ -81,6 +81,15 @@
 .Product-shortDetails{
     @apply text-[16px] text-[#6b7280] leading-[20px] mb-2;
 }
-/* .Product-reviews{
-    @apply justify-around;
-} */
+.Product-reviews{
+    @apply justify-start;
+}
+
+/* Review System */
+
+.Rating div {
+    @apply flex;
+  }
+.Rating-count{
+    @apply ml-3;
+}

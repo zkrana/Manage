@@ -15,10 +15,10 @@ body{
     @apply w-full h-14 sm:h-[5rem] flex justify-between items-center;
 }
 .Topbar-bg{
-    @apply bg-white py-3 sm:py-0 shadow-sm;
+    @apply bg-[#f7f7f7] py-3 sm:py-0 shadow-sm;
 }
 .Top-bar{
-    @apply h-12 flex justify-between flex-wrap items-center;
+    @apply h-12 flex justify-between flex-wrap items-center border-b border-[white];
 }
 .Store-details{
     @apply w-full sm:w-1/2 flex;

@@ -6,9 +6,7 @@ import ShopComponent from './components/Shop/ShopComponent'
 export default function Shop() {
   return (
     <div>
-        <div className="Container flex w-full">
-          <Header />
-        </div>
+        <Header />
         <ShopComponent />
         <Footer />
     </div>

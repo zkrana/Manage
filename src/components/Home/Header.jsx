@@ -37,95 +37,96 @@ export default function Header() {
                 </div>
             </div>
           </div>
-        </div>
-        <div className="Container">
-        <div className="Header-wrapper">
-          <header className="App-header">
-            <div className='Logo-box w-1/2 h-12 flex justify-start items-center pl-3 md:pl-0 md:w-2/12'>
-              <NavLink to='/' className='borderUnset'>
-                  <img src={logo} alt='Logo' height={60} width={120} className='animate-pulse' />
-              </NavLink>
-            </div>
-            <div className='w-1/2 md:w-10/12 flex justify-end items-center'>
-              <ul className='px-4 hidden md:flex'>
-                <li className='Nav-item'>
-                  <NavLink to='/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      Home
-                  </NavLink>
-                </li>
-                <li className='Nav-item'>
-                  <NavLink to='../about' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      About Us
-                  </NavLink>
-                </li>
-                <li className='Nav-item'>
-                  <NavLink to='../service' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      Service
-                  </NavLink>
-                </li>
-                <li className='Nav-item'>
-                  <NavLink to='../shop' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      Shop
-                  </NavLink>
-                </li>
-                <li className='Nav-item'>
-                  <NavLink to='../contact' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      Contact
-                  </NavLink>
-                </li>
-              </ul>
-
-              <div className='Acc-wrap'>
-                <span>
-                    <NavLink to='../../login'>
-                        <img src={login} width={20} height={20} alt='Login'/>
-                    </NavLink>
-                </span>
-                <span className='ml-2'>
-                    <NavLink to='../../cartpage'>
-                    <img src={cart} width={20} height={20} alt='Cart' />
-                    </NavLink>
-                   
-                </span>
+          <div className="Container">
+          <div className="Header-wrapper">
+            <header className="App-header">
+              <div className='Logo-box w-1/2 h-12 flex justify-start items-center pl-3 md:pl-0 md:w-2/12'>
+                <NavLink to='/' className='borderUnset'>
+                    <img src={logo} alt='Logo' height={60} width={120} className='animate-pulse' />
+                </NavLink>
               </div>
-              <div className='flex w-20 h-20 justify-center items-center md:hidden'>
-                <FontAwesomeIcon onClick={ () => setShowMobileMenu(!showMobileMenu)} icon={faBars} className=' pl-2 text-primary text-3xl cursor-pointer relative'>
-                </FontAwesomeIcon>
+              <div className='w-1/2 md:w-10/12 flex justify-end items-center'>
+                <ul className='px-4 hidden md:flex'>
+                  <li className='Nav-item'>
+                    <NavLink to='/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        Home
+                    </NavLink>
+                  </li>
+                  <li className='Nav-item'>
+                    <NavLink to='../about' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        About Us
+                    </NavLink>
+                  </li>
+                  <li className='Nav-item'>
+                    <NavLink to='../service' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        Service
+                    </NavLink>
+                  </li>
+                  <li className='Nav-item'>
+                    <NavLink to='../shop' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        Shop
+                    </NavLink>
+                  </li>
+                  <li className='Nav-item'>
+                    <NavLink to='../contact' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        Contact
+                    </NavLink>
+                  </li>
+                </ul>
+
+                <div className='Acc-wrap'>
+                  <span>
+                      <NavLink to='../../login'>
+                          <img src={login} width={20} height={20} alt='Login'/>
+                      </NavLink>
+                  </span>
+                  <span className='ml-2'>
+                      <NavLink to='../../cartpage'>
+                      <img src={cart} width={20} height={20} alt='Cart' />
+                      </NavLink>
+                    
+                  </span>
+                </div>
+                <div className='flex w-20 h-20 justify-center items-center md:hidden'>
+                  <FontAwesomeIcon onClick={ () => setShowMobileMenu(!showMobileMenu)} icon={faBars} className=' pl-2 text-primary text-3xl cursor-pointer relative'>
+                  </FontAwesomeIcon>
+                </div>
+
+                <ul className= {showMobileMenu ? 'mb-menu':'hidden'}>
+                <li className='Nav-item'>
+                    <NavLink to='/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        Home
+                    </NavLink>
+                  </li>
+                  <li className='Nav-item'>
+                    <NavLink to='../about' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        About Us
+                    </NavLink>
+                  </li>
+                  <li className='Nav-item'>
+                    <NavLink to='../service' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        Service
+                    </NavLink>
+                  </li>
+                  <li className='Nav-item'>
+                    <NavLink to='../shop' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        Shop
+                    </NavLink>
+                  </li>
+                  <li className='Nav-item'>
+                    <NavLink to='../contact' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                        Contact
+                    </NavLink>
+                  </li>
+                </ul>
+
               </div>
-
-              <ul className= {showMobileMenu ? 'mb-menu':'hidden'}>
-              <li className='Nav-item'>
-                  <NavLink to='/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      Home
-                  </NavLink>
-                </li>
-                <li className='Nav-item'>
-                  <NavLink to='../about' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      About Us
-                  </NavLink>
-                </li>
-                <li className='Nav-item'>
-                  <NavLink to='../service' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      Service
-                  </NavLink>
-                </li>
-                <li className='Nav-item'>
-                  <NavLink to='../shop' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      Shop
-                  </NavLink>
-                </li>
-                <li className='Nav-item'>
-                  <NavLink to='../contact' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
-                      Contact
-                  </NavLink>
-                </li>
-              </ul>
-
-            </div>
-            <Modal open={openModal} onClose={ () => setOpenModal(false) } />
-          </header>
+              <Modal open={openModal} onClose={ () => setOpenModal(false) } />
+            </header>
+          </div>
         </div>
         </div>
+
     </div>
   )
 }
