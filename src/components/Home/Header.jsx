@@ -41,34 +41,34 @@ export default function Header() {
           <div className="Header-wrapper">
             <header className="App-header">
               <div className='Logo-box w-1/2 h-12 flex justify-start items-center pl-3 md:pl-0 md:w-2/12'>
-                <NavLink to='/Manage/' className='borderUnset'>
+                <NavLink to='/' className='borderUnset'>
                     <img src={logo} alt='Logo' height={60} width={120} className='animate-pulse' />
                 </NavLink>
               </div>
               <div className='w-1/2 md:w-10/12 flex justify-end items-center'>
                 <ul className='px-4 hidden md:flex'>
                   <li className='Nav-item'>
-                    <NavLink to='/Manage/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Home
                     </NavLink>
                   </li>
                   <li className='Nav-item'>
-                    <NavLink to='../Manage/about' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='../about' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         About Us
                     </NavLink>
                   </li>
                   <li className='Nav-item'>
-                    <NavLink to='../Manage/service' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='../service' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Service
                     </NavLink>
                   </li>
                   <li className='Nav-item'>
-                    <NavLink to='../Manage/shop' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='../shop' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Shop
                     </NavLink>
                   </li>
                   <li className='Nav-item'>
-                    <NavLink to='../Manage/contact' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='../contact' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Contact
                     </NavLink>
                   </li>
@@ -76,12 +76,12 @@ export default function Header() {
 
                 <div className='Acc-wrap'>
                   <span>
-                      <NavLink to='../../Manage/login'>
+                      <NavLink to='../../login'>
                           <img src={login} width={20} height={20} alt='Login'/>
                       </NavLink>
                   </span>
                   <span className='ml-2'>
-                      <NavLink to='../../Manage/cartpage'>
+                      <NavLink to='../../cartpage'>
                       <img src={cart} width={20} height={20} alt='Cart' />
                       </NavLink>
                     
@@ -94,27 +94,27 @@ export default function Header() {
 
                 <ul className= {showMobileMenu ? 'mb-menu':'hidden'}>
                 <li className='Nav-item'>
-                    <NavLink to='/Manage/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Home
                     </NavLink>
                   </li>
                   <li className='Nav-item'>
-                    <NavLink to='../Manage/about' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='../about' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         About Us
                     </NavLink>
                   </li>
                   <li className='Nav-item'>
-                    <NavLink to='../Manage/service' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='../service' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Service
                     </NavLink>
                   </li>
                   <li className='Nav-item'>
-                    <NavLink to='../Manage/shop' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='../shop' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Shop
                     </NavLink>
                   </li>
                   <li className='Nav-item'>
-                    <NavLink to='../Manage/contact' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
+                    <NavLink to='../contact' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Contact
                     </NavLink>
                   </li>
