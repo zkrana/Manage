@@ -93,6 +93,9 @@ export default function Header() {
                 </div>
 
                 <ul className= {showMobileMenu ? 'mb-menu':'hidden'}>
+                  <div className='CloseIcon'>
+                      <span> X </span>
+                  </div>
                 <li className='Nav-item'>
                     <NavLink to='/' className={ (navInfo) => navInfo.isActive ? 'active' : ''}>
                         Home

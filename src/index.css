@@ -48,8 +48,14 @@ body{
 .Acc-wrap span a{
     @apply flex items-center w-[25px] h-[25px];
 }
+/* Mobile Nav icon  */
+.CloseIcon {
+    @apply absolute right-[10px] top-[10px] px-[10px] py-[5px] hover:cursor-pointer bg-white border-[1px] border-gray-500 rounded-sm z-[12];
+  }
+
+
 .Nav-item{
-    @apply px-4 text-lg font-semibold text-black hover:text-primary cursor-pointer;
+    @apply px-4 text-lg font-semibold text-black hover:text-[#fff] cursor-pointer py-[10px] mb-[10px] hover:bg-[#000000];
 }
 .active{
     @apply text-primary border-b-2 border-b-primary pb-[5px];
@@ -80,7 +86,7 @@ body{
 }
 
 .mb-menu{
-    @apply absolute right-1 w-full top-24 py-3 sm:hidden mt-6 bg-white text-primary;
+    @apply fixed right-1 w-[100vw] h-full z-10 top-0 py-3 sm:hidden mt-0 bg-white text-primary pt-[30px];
 }
 /* Feature Section */
 .Feature{
